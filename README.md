@@ -7,6 +7,8 @@ A Node.js TypeScript backend API that integrates with the Cavos SDK to provide u
 - 🔐 **User Authentication**: Register, login, and delete users using Auth0
 - 💰 **Wallet Management**: Deploy wallets and check token balances
 - 🔄 **Transaction Execution**: Execute smart contract calls
+- 🌌 **Smart Contract Integration**: Direct integration with Cosmic Trader contract
+- 🎮 **Trading System**: Mock and real trading functionality
 - 🛡️ **Security**: Helmet for security headers, CORS enabled
 - 📝 **Logging**: Morgan for request logging
 - 🎯 **TypeScript**: Full TypeScript support with type safety

@@ -9,6 +9,7 @@ export const config = {
   
   // Cavos configuration
   cavos: {
+    appId: process.env.CAVOS_APP_ID || '',
     apiSecret: process.env.CAVOS_API_SECRET || '',
     hashSecret: process.env.CAVOS_HASH_SECRET || '',
     defaultNetwork: process.env.DEFAULT_NETWORK || 'sepolia'

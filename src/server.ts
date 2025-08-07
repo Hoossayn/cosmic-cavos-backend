@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 
 import authRoutes from './routes/auth';
 import walletRoutes from './routes/wallet';
+import cosmicTraderRoutes from './routes/cosmicTrader';
 
 // Load environment variables
 dotenv.config();
@@ -33,6 +34,7 @@ app.get('/health', (req, res) => {
 // API routes
 app.use('/api/auth', authRoutes);
 app.use('/api/wallet', walletRoutes);
+app.use('/api/cosmic-trader', cosmicTraderRoutes);
 
 // 404 handler
 app.use('*', (req, res) => {
@@ -61,6 +63,7 @@ app.listen(PORT, () => {
   console.log(`🏥 Health check: http://localhost:${PORT}/health`);
   console.log(`🔐 Auth endpoints: http://localhost:${PORT}/api/auth`);
   console.log(`💰 Wallet endpoints: http://localhost:${PORT}/api/wallet`);
+  console.log(`🌌 Cosmic Trader endpoints: http://localhost:${PORT}/api/cosmic-trader`);
 });
 
 export default app;
